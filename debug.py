@@ -1,6 +1,13 @@
 from lib.animal import *
 from lib.zoo import *
 import ipdb
+
+# domain is like... the whole thing 
+# model is like the idea of a thing, aka classes
+
+# zoo ------ < animals
+# a zoo has many animals
+
 # code here
 
 # e.g.  
@@ -9,15 +16,16 @@ import ipdb
 
 seneca = Zoo('Seneca', 'Rochester, NY')
 sanfran = Zoo('San Fran Zoo', 'San Fransisco')
-rover = Animal('rover', 120, 'wolf', 'sanfran')  
-katy = Animal('katy', 30, 'red panda', 'sanfran')  
-smoky = Animal('smoky', 120, 'bear', 'sanfran')     
-wf = Animal('white fang', 120, 'wolf', 'seneca')  
+sams = Zoo('Sams Spot', 'San Fransisco')
+rover = Animal('wolf', 120, 'rudy', sanfran)  
+katy = Animal('bear', 30, 'katy', sanfran)  
+smoky = Animal('bear', 120, 'smoky', sams)     
+wf = Animal('wolf', 120, 'white fang', 'seneca')  
 
 
 
 
-seneca.animals
+# seneca.animals
 #  DONE : Animal.find_by_species('wolf')
 #  DONE : print(Zoo.all)
 
@@ -26,4 +34,4 @@ seneca.animals
 
 # do not remove 
 
-# ipdb.set_trace()
+ipdb.set_trace()

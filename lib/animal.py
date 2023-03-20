@@ -1,10 +1,11 @@
 import ipdb
 
+
 class Animal:
     #keep track of all animal instances
     all = []
 
-    def __init__(self, nickname, weight, species, zoo_instance ):
+    def __init__(self, species,  weight, nickname, zoo_instance ):
         self.nickname = nickname
         self.weight = weight
         self.species = species
